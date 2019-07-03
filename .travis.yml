@@ -6,4 +6,4 @@ before_install:
   - docker build  -t khoanguyen/docker-react -f Dockerfile.dev .
 
 script:
-  - docker run -it khoanguyen/docker-react npm run test
+  - docker run khoanguyen/docker-react npm run test
