@@ -1,9 +1,9 @@
 sudo: required
+language: generic
 services:
   - docker
 
 before_install:
-  - gem install rake
   - docker build  -t khoanguyen/docker-react -f Dockerfile .
 deploy:
   provider: elasticbeanstalk
