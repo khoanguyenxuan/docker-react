@@ -4,10 +4,6 @@ services:
 
 before_install:
   - docker build  -t khoanguyen/docker-react -f Dockerfile .
-
-script:
-  - docker run -d khoanguyen/docker-react npm start
-
 deploy:
   provider: elasticbeanstalk
   region: "us-east-2"
